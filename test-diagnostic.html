@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Diagnostic Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; background: #f0f0f0; }
+        .success { color: green; font-weight: bold; }
+        .error { color: red; font-weight: bold; }
+        #output { background: white; padding: 15px; margin-top: 20px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Diagnostic Test</h1>
+    <div id="output">
+        <p>Testing JavaScript execution...</p>
+    </div>
+    
+    <script>
+        console.log('TEST: JavaScript is executing');
+        
+        const output = document.getElementById('output');
+        
+        if (output) {
+            output.innerHTML = `
+                <p class="success">✓ JavaScript is working!</p>
+                <p class="success">✓ DOM access is working!</p>
+                <p>If you can see this, JavaScript and DOM manipulation are functioning correctly.</p>
+                <hr>
+                <p><strong>Next step:</strong> Close this file and open index.html</p>
+                <p>Press F12 to open Developer Tools, go to the Console tab, and check for:</p>
+                <ul>
+                    <li>The message: "=== Spanish Verbs App.js loaded - Version 20260408 ==="</li>
+                    <li>Any RED error messages</li>
+                </ul>
+                <p>Take a screenshot or copy the console messages and share them.</p>
+            `;
+        } else {
+            document.body.innerHTML = '<p class="error">ERROR: Could not find output element!</p>';
+        }
+    </script>
+</body>
+</html>
