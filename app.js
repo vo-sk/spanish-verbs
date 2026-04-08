@@ -1,7 +1,7 @@
-console.log('=== Spanish Verbs App.js loaded - Version 20260408d ===');
+console.log('=== Spanish Verbs App.js loaded - Version 20260408e ===');
 
 // Spanish verb conjugation data
-// Updated: 2026-04-08 - Added speech recognition with scoring & mobile optimizations
+// Updated: 2026-04-08 - Added How It Works modal with instructions
 const verbs = [
     {
         infinitive: 'hablar',
