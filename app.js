@@ -772,5 +772,44 @@ tenseBtns.forEach(btn => {
     });
 });
 
+// How It Works Modal
+const modal = document.getElementById('howItWorksModal');
+const howItWorksBtn = document.getElementById('howItWorksBtn');
+const closeModalBtn = document.getElementById('closeModalBtn');
+const closeModalX = document.querySelector('.close-modal');
+
+if (howItWorksBtn) {
+    howItWorksBtn.addEventListener('click', () => {
+        modal.style.display = 'flex';
+    });
+}
+
+if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+}
+
+if (closeModalX) {
+    closeModalX.addEventListener('click', () => {
+        modal.style.display = 'none';
+    });
+}
+
+// Close modal when clicking outside
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
+// Show modal on first visit
+if (!localStorage.getItem('spanishVerbsVisited')) {
+    setTimeout(() => {
+        modal.style.display = 'flex';
+        localStorage.setItem('spanishVerbsVisited', 'true');
+    }, 500);
+}
+
 // Initialize
 displayVerb(currentVerbIndex);

@@ -15,6 +15,7 @@
         <header>
             <h1>🇪🇸 Spanish Verbs</h1>
             <p class="subtitle">Master your conjugations</p>
+            <button id="howItWorksBtn" class="info-btn" title="How it Works">ℹ️ How it Works</button>
         </header>
 
         <main>
@@ -37,6 +38,73 @@
                 <button class="btn-primary" id="nextVerb">Next Verb</button>
             </div>
         </main>
+    </div>
+
+    <!-- How It Works Modal -->
+    <div id="howItWorksModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>🎓 How It Works</h2>
+            
+            <div class="instruction-section">
+                <h3>📚 Learning Conjugations</h3>
+                <ul>
+                    <li><strong>Choose a tense:</strong> Click Present, Preterite, Imperfect, or Future</li>
+                    <li><strong>See conjugations:</strong> View all 6 forms with highlighted endings</li>
+                    <li><strong>Click any row</strong> to reveal example phrases</li>
+                    <li><strong>Next Verb:</strong> Click the button to practice a different verb</li>
+                </ul>
+            </div>
+
+            <div class="instruction-section">
+                <h3>🔊 Listen & Learn</h3>
+                <ul>
+                    <li><strong>Speaker button (🔊):</strong> Tap to hear native Spanish pronunciation</li>
+                    <li>Listen carefully before attempting to speak</li>
+                    <li>Replay as many times as needed</li>
+                </ul>
+            </div>
+
+            <div class="instruction-section">
+                <h3>🎤 Record & Score</h3>
+                <ul>
+                    <li><strong>Green Record button:</strong> Tap to start recording</li>
+                    <li><strong>Speak the Spanish phrase</strong> clearly into your microphone</li>
+                    <li><strong>Instant feedback:</strong> See your score (0-100%)</li>
+                    <li><strong>Color-coded words:</strong>
+                        <ul class="color-legend">
+                            <li><span class="legend-excellent">Green 90%+</span> = Excellent</li>
+                            <li><span class="legend-good">Blue 70%+</span> = Good</li>
+                            <li><span class="legend-fair">Yellow 50%+</span> = Fair</li>
+                            <li><span class="legend-wrong">Red &lt;50%</span> = Needs practice</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="instruction-section">
+                <h3>📊 Track Your Progress</h3>
+                <ul>
+                    <li><strong>Verb Score:</strong> See your average % under each verb name</li>
+                    <li><strong>Attempts tracked:</strong> Number of recordings you've made</li>
+                    <li><strong>Saved automatically:</strong> Progress persists in your browser</li>
+                    <li><strong>Goal:</strong> Aim for 90%+ on all verbs!</li>
+                </ul>
+            </div>
+
+            <div class="instruction-section tip">
+                <h3>💡 Tips for Success</h3>
+                <ul>
+                    <li>🎧 Use headphones for better audio quality</li>
+                    <li>📱 Allow microphone access when prompted (one-time only)</li>
+                    <li>🗣️ Speak clearly and at normal pace</li>
+                    <li>🔁 Practice difficult verbs multiple times</li>
+                    <li>⭐ Try to improve your average score each time</li>
+                </ul>
+            </div>
+
+            <button class="btn-primary" id="closeModalBtn">Got it! Let's Practice</button>
+        </div>
     </div>
 
     <script src="app.js?v=20260408d"></script>
