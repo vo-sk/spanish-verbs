@@ -119,12 +119,14 @@ h1 {
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
+    line-height: 1;
 }
 
 #verb-display .infinitive-ending {
     color: #2ecc71;
     font-weight: 700;
-    margin-left: -0.05em;
+    margin-left: 0;
+    letter-spacing: 0;
 }
 
 .verb-type-badge {
@@ -145,6 +147,8 @@ h1 {
     color: var(--text-light);
     font-style: italic;
     margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
 }
 
 .verb-score-container {
@@ -568,7 +572,7 @@ h1 {
     }
     
     .verb-translation {
-        font-size: 0.95rem;
+        font-size: 1.5rem;
         margin-bottom: 0.5rem;
     }
     
