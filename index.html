@@ -8,7 +8,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <title>Spanish Verbs - Mobile Practice</title>
-    <link rel="stylesheet" href="styles.css?v=20260408e">
+    <link rel="stylesheet" href="styles.css?v=20260408f">
 </head>
 <body>
     <div class="container">
@@ -25,10 +25,22 @@
                 <div id="verb-score-display" class="verb-score-container"></div>
                 
                 <div class="tense-selector">
-                    <button class="tense-btn active" data-tense="present">Present</button>
-                    <button class="tense-btn" data-tense="preterite">Preterite</button>
-                    <button class="tense-btn" data-tense="imperfect">Imperfect</button>
-                    <button class="tense-btn" data-tense="future">Future</button>
+                    <button class="tense-btn active" data-tense="present">
+                        <span class="tense-name">Present</span>
+                        <span class="tense-desc">now / habitual</span>
+                    </button>
+                    <button class="tense-btn" data-tense="preterite">
+                        <span class="tense-name">Preterite</span>
+                        <span class="tense-desc">completed past</span>
+                    </button>
+                    <button class="tense-btn" data-tense="imperfect">
+                        <span class="tense-name">Imperfect</span>
+                        <span class="tense-desc">used to / ongoing</span>
+                    </button>
+                    <button class="tense-btn" data-tense="future">
+                        <span class="tense-name">Future</span>
+                        <span class="tense-desc">will / going to</span>
+                    </button>
                 </div>
 
                 <div class="conjugations" id="conjugations">
@@ -107,6 +119,6 @@
         </div>
     </div>
 
-    <script src="app.js?v=20260408e"></script>
+    <script src="app.js?v=20260408f"></script>
 </body>
 </html>

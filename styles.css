@@ -229,6 +229,9 @@ h1 {
     transition: all 0.2s;
     font-size: 1rem;
     font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .tense-btn:active {
@@ -239,6 +242,18 @@ h1 {
     background: var(--secondary);
     color: white;
     border-color: var(--secondary);
+}
+
+.tense-name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tense-desc {
+    font-size: 0.75rem;
+    font-weight: 400;
+    opacity: 0.8;
+    font-style: italic;
 }
 
 .conjugations {
@@ -578,7 +593,15 @@ h1 {
     .tense-btn {
         min-width: 0;
         padding: 0.6rem 0.5rem;
+        gap: 0.2rem;
+    }
+    
+    .tense-name {
         font-size: 0.9rem;
+    }
+    
+    .tense-desc {
+        font-size: 0.65rem;
     }
     
     .conjugation-header,
